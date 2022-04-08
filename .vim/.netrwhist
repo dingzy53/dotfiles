@@ -1,0 +1,12 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =4
+let g:netrw_dirhist_4='/home/ding/.vim/plugged/markdown-preview.nvim'
+let g:netrw_dirhist_3='/home/ding/.vim'
+let g:netrw_dirhist_2='/var/log/timeshift'
+let g:netrw_dirhist_1='/home/ding/.config/systemd/user'
+let g:netrw_dirhist_0='/home/ding/github'
+let g:netrw_dirhist_9='/home/ding'
+let g:netrw_dirhist_8='/home/ding/github'
+let g:netrw_dirhist_7='/home/ding/.config/i3'
+let g:netrw_dirhist_6='/home/ding/.local/share/sddm'
+let g:netrw_dirhist_5='/home/ding'
