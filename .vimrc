@@ -4,8 +4,8 @@ Plug 'joshdick/onedark.vim'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'jaredpar/EasyMotion'
-Plug 'preservim/nerdtree',{'on':'NERDTreeToggle'}
 Plug 'godlygeek/tabular'
+"Plug 'preservim/nerdtree',{'on':'NERDTreeToggle'}
 Plug 'preservim/vim-markdown'
 Plug 'iamcco/markdown-preview.nvim'
 Plug 'dhruvasagar/vim-table-mode'
@@ -34,21 +34,14 @@ call plug#end()
 let mapleader = ','
 let g:mapleader = ','
 
+" base
 syntax on
-
-" filetype
 filetype on
-
-" Enable filetype plugins
 filetype plugin on
 filetype indent on
-
-" Undo
 set history=2000
 set undofile
-set undodir=/home/ding/.vim/vim_undo
-
-" base
+set undodir=/home/ding/.vim/vim_undo "path
 set nocompatible
 set autoread
 set shortmess=atI
@@ -72,18 +65,18 @@ set textwidth=80
 set number
 set relativenumber
 set nowrap
-set showcmd                     " display incomplete commands
-set showmode                    " display current modes
-set showmatch                   " jump to matches when entering parentheses
-set matchtime=2                 " tenths of a second to show the matching parenthesis
+set showcmd
+set showmode
+set showmatch
+set matchtime=2
 
 "search
-set incsearch                   " do incremental searching, search as you type
-set ignorecase                  " ignore case when searching
-set smartcase                   " no ignorecase if Uppercase char present
+set incsearch
+set ignorecase
+set smartcase
 
 " tab
-set expandtab                   " expand tabs to spaces
+set expandtab
 set smarttab
 set shiftround
 
@@ -91,7 +84,7 @@ set shiftround
 set autoindent smartindent
 set shiftwidth=4
 set tabstop=4
-set softtabstop=4                " insert mode tab and backspace use 4 spaces
+set softtabstop=4
 
 " encoding
 set encoding=utf-8
@@ -105,12 +98,12 @@ set formatoptions+=B
 set selection=inclusive
 set selectmode=mouse,key
 set completeopt=longest,menu
-set wildmenu                           " show a navigable menu for tab completion"
+set wildmenu
 set wildmode=longest,list,full
 set wildignore=*.o,*~,*.pyc,*.class
 
 " others
-set backspace=indent,eol,start  " make that backspace key work the way it should
+set backspace=indent,eol,start
 set whichwrap+=<,>,h,l
 
 " if this not work ,make sure .viminfo is writable for you
@@ -121,11 +114,18 @@ endif
 " theme
 set background=dark
 colorscheme delek
+let g:onedark_termcolors=256
+let g:airline_theme='onedark'
 
 " set mark column color
 hi! link SignColumn   LineNr
 hi! link ShowMarksHLl DiffAdd
 hi! link ShowMarksHLu DiffChange
+
+setlocal list
+set listchars=tab:>-,trail:.
+highlight MyTabSpace guifg=darkgrey ctermfg=darkgrey
+match MyTabSpace /\t\| /
 
 
 " ============================ specific file type ===========================
@@ -182,9 +182,8 @@ nnoremap <F4> :set wrap! wrap?<CR>
 au InsertLeave * set nopaste
 nnoremap <F6> :exec exists('syntax_on') ? 'syn off' : 'syn on'<CR>
 
-" Quickly close the current window
 nnoremap <leader>wq :wq<CR>
-" Quickly save the current file
+nnoremap <leader>q :q!<CR>
 nnoremap <leader>w :w<CR>
 
 " select all
@@ -193,9 +192,6 @@ map <Leader>sa ggVG"
 " remap U to <C-r> for easier redo
 nnoremap U <C-r>
 
-" Swap implementations of ` and ' jump to markers
-" By default, ' jumps to the marked line, ` jumps to the marked line and
-" column, so swap them
 nnoremap ' `
 nnoremap ` '
 
@@ -209,38 +205,15 @@ nnoremap <silent> g* g*zz
 " remove highlight
 noremap <silent><leader>/ :nohls<CR>
 
-"Reselect visual block after indent/outdent.调整缩进后自动选中，方便再次操作
+"Reselect visual block after indent/outdent.
 vnoremap < <gv
 vnoremap > >gv
 
 " y$ -> Y Make Y behave like other capitals
 map Y y$
 
-" Shift+H goto head of the line, Shift+L goto end of the line
 nnoremap H ^
 nnoremap L $
-
-" save
-cmap w!! w !sudo tee >/dev/null %
-
-setlocal list
-set listchars=tab:>-,trail:.
-highlight MyTabSpace guifg=darkgrey ctermfg=darkgrey
-match MyTabSpace /\t\| /
-
-" compile function
-map <F5> :call CompileRunGcc() <CR>
-func! CompileRunGcc()
-    exec "w"
-    if &filetype == 'sh'
-        :!time bash %
-    elseif &filetype == 'python'
-        exec "!!time python3 %"
-    elseif &filetype == 'markdown'
-        exec 'MarkdownPreview'
-    endif
-endfunc
-" ================================================================================
 
 " Markdown
 autocmd Filetype markdown inoremap ,f <Esc>/<++><CR>:nohlsearch<CR>c4l
@@ -266,10 +239,13 @@ let g:mkdp_auto_start = 1
 let g:mkdp_browser = 'firefox'
 autocmd Filetype markdown nmap <silent> <F9> <Plug>StopMarkdownPreview
 autocmd Filetype markdown nnoremap ,t <CR>:TableModeEnable<CR>
-"================================================================================
+
+" python
+autocmd Filetype python nnoremap <buffer> <F5> :w<CR>:!python3 %<CR>
+autocmd Filetype python nnoremap ,3 ^i#<Space><Esc>
+autocmd Filetype python inoremap ,3 ^i#<Space><Esc>
 
 " txt
 autocmd Filetype text nnoremap ,d <CR>:g/^\s*$/d<CR>
 autocmd Filetype text nnoremap ,a <CR>:%s/\s+$//g<CR>
 autocmd Filetype text nnoremap ,g <CR>:%s/./&/g<CR>
-"================================================================================
