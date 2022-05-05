@@ -1,0 +1,3 @@
+start=277.466667
+fullscreen=yes
+af=lavfi=graph=%14%pan=mono|FC=FL

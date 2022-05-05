@@ -1,0 +1,109 @@
+00:00:00.000192 main     VirtualBox XPCOM Server 6.1.32 r149290 linux.amd64 (Feb 10 2022 14:02:19) release log
+00:00:00.000193 main     Log opened 2022-03-12T04:12:19.136981000Z
+00:00:00.000194 main     Build Type: release
+00:00:00.000195 main     OS Product: Linux
+00:00:00.000196 main     OS Release: 5.16.13-arch1-1
+00:00:00.000197 main     OS Version: #1 SMP PREEMPT Tue, 08 Mar 2022 20:07:36 +0000
+00:00:00.000213 main     DMI Product Name: B85
+00:00:00.000219 main     DMI Product Version: To be filled by O.E.M.
+00:00:00.000223 main     Firmware type: UEFI
+00:00:00.000441 main     Secure Boot: Disabled
+00:00:00.000494 main     Host RAM: 5859MB (5.7GB) total, 3573MB (3.4GB) available
+00:00:00.000506 main     Executable: /usr/lib/virtualbox/VBoxSVC
+00:00:00.000507 main     Process ID: 3244
+00:00:00.000507 main     Package type: LINUX_64BITS_GENERIC (OSE)
+00:00:00.001995 main     IPC socket path: /tmp/.vbox-ding-ipc/ipcd
+00:00:00.106461 nspr-2   VirtualBox: object creation starts
+00:00:00.106526 nspr-2   Home directory: '/home/ding/.config/VirtualBox'
+00:00:00.106631 nspr-2   Loading settings file "/home/ding/.config/VirtualBox/VirtualBox.xml" with version "1.12-linux"
+00:00:00.107256 nspr-2   HostDnsMonitor: initializing
+00:00:00.107431 nspr-2   NAT: resolv.conf: nameserver 192.168.1.1
+00:00:00.107440 nspr-2   NAT: resolv.conf: FIXME: ignoring IPv6 zone %enp2s0
+00:00:00.107442 nspr-2   NAT: resolv.conf: nameserver fe80::66ee:b7ff:fe70:3390
+00:00:00.107449 nspr-2   HostDnsMonitor: updating information
+00:00:00.107459 nspr-2   HostDnsMonitor: old information
+00:00:00.107462 nspr-2     no server entries
+00:00:00.107464 nspr-2     no domain set
+00:00:00.107465 nspr-2     no search string entries
+00:00:00.107468 nspr-2   HostDnsMonitor: new information
+00:00:00.107469 nspr-2     server 1: 192.168.1.1
+00:00:00.107472 nspr-2     server 2: fe80::66ee:b7ff:fe70:3390%enp2s0
+00:00:00.107474 nspr-2     domain: realtek
+00:00:00.107476 nspr-2     search string 1: realtek
+00:00:00.109659 nspr-2   VD: VDInit finished with VINF_SUCCESS
+00:00:00.109725 nspr-2   ERROR [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={027bc463-929c-40e8-bf16-fea557cd8e7e} aComponent={SystemPropertiesWrap} aText={Cannot determine default Guest Additions ISO location. Most likely they are not available}, preserve=false aResultDetail=0
+00:00:00.113152 nspr-2   ERROR [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={85632c68-b5bb-4316-a900-5eb28d3413df} aComponent={MachineWrap} aText={Runtime error opening '/mnt/ntfs_data/Virtual_box/kalilinux/kalilinux.vbox' for reading: -102 (File not found.).
+00:00:00.113157 nspr-2   /build/virtualbox/src/VirtualBox-6.1.32/src/VBox/Main/src-server/MachineImpl.cpp[754] (nsresult Machine::i_registeredInit())}, preserve=false aResultDetail=0
+00:00:00.113314 nspr-2   ERROR [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={85632c68-b5bb-4316-a900-5eb28d3413df} aComponent={MachineWrap} aText={Runtime error opening '/mnt/ntfs_data/Virtual_box/Manjaro/Manjaro.vbox' for reading: -102 (File not found.).
+00:00:00.113316 nspr-2   /build/virtualbox/src/VirtualBox-6.1.32/src/VBox/Main/src-server/MachineImpl.cpp[754] (nsresult Machine::i_registeredInit())}, preserve=false aResultDetail=0
+00:00:00.113752 nspr-2   VirtualBox: object created
+00:00:00.522976 nspr-3   ERROR [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={85632c68-b5bb-4316-a900-5eb28d3413df} aComponent={MachineWrap} aText={Runtime error opening '/mnt/ntfs_data/Virtual_box/kalilinux/kalilinux.vbox' for reading: -102 (File not found.).
+00:00:00.522981 nspr-3   /build/virtualbox/src/VirtualBox-6.1.32/src/VBox/Main/src-server/MachineImpl.cpp[754] (nsresult Machine::i_registeredInit())}, preserve=false aResultDetail=0
+00:00:00.523255 nspr-3   ERROR [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={85632c68-b5bb-4316-a900-5eb28d3413df} aComponent={MachineWrap} aText={Runtime error opening '/mnt/ntfs_data/Virtual_box/kalilinux/kalilinux.vbox' for reading: -102 (File not found.).
+00:00:00.523259 nspr-3   /build/virtualbox/src/VirtualBox-6.1.32/src/VBox/Main/src-server/MachineImpl.cpp[754] (nsresult Machine::i_registeredInit())}, preserve=false aResultDetail=0
+00:00:00.523740 nspr-3   ERROR [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={85632c68-b5bb-4316-a900-5eb28d3413df} aComponent={MachineWrap} aText={Runtime error opening '/mnt/ntfs_data/Virtual_box/kalilinux/kalilinux.vbox' for reading: -102 (File not found.).
+00:00:00.523744 nspr-3   /build/virtualbox/src/VirtualBox-6.1.32/src/VBox/Main/src-server/MachineImpl.cpp[754] (nsresult Machine::i_registeredInit())}, preserve=false aResultDetail=0
+00:00:00.526145 nspr-3   ERROR [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={85632c68-b5bb-4316-a900-5eb28d3413df} aComponent={MachineWrap} aText={Runtime error opening '/mnt/ntfs_data/Virtual_box/Manjaro/Manjaro.vbox' for reading: -102 (File not found.).
+00:00:00.526149 nspr-3   /build/virtualbox/src/VirtualBox-6.1.32/src/VBox/Main/src-server/MachineImpl.cpp[754] (nsresult Machine::i_registeredInit())}, preserve=false aResultDetail=0
+00:00:00.526417 nspr-3   ERROR [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={85632c68-b5bb-4316-a900-5eb28d3413df} aComponent={MachineWrap} aText={Runtime error opening '/mnt/ntfs_data/Virtual_box/Manjaro/Manjaro.vbox' for reading: -102 (File not found.).
+00:00:00.526421 nspr-3   /build/virtualbox/src/VirtualBox-6.1.32/src/VBox/Main/src-server/MachineImpl.cpp[754] (nsresult Machine::i_registeredInit())}, preserve=false aResultDetail=0
+00:00:00.527098 nspr-3   ERROR [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={85632c68-b5bb-4316-a900-5eb28d3413df} aComponent={MachineWrap} aText={Runtime error opening '/mnt/ntfs_data/Virtual_box/Manjaro/Manjaro.vbox' for reading: -102 (File not found.).
+00:00:00.527102 nspr-3   /build/virtualbox/src/VirtualBox-6.1.32/src/VBox/Main/src-server/MachineImpl.cpp[754] (nsresult Machine::i_registeredInit())}, preserve=false aResultDetail=0
+00:00:00.536921 nspr-3   ERROR [COM]: aRC=E_ACCESSDENIED (0x80070005) aIID={85632c68-b5bb-4316-a900-5eb28d3413df} aComponent={MachineWrap} aText={The object functionality is limited}, preserve=false aResultDetail=0
+00:00:00.536951 nspr-3   ERROR [COM]: aRC=E_ACCESSDENIED (0x80070005) aIID={85632c68-b5bb-4316-a900-5eb28d3413df} aComponent={MachineWrap} aText={The object functionality is limited}, preserve=false aResultDetail=0
+00:00:00.536960 nspr-3   ERROR [COM]: aRC=VBOX_E_OBJECT_NOT_FOUND (0x80bb0001) aIID={d0a0163f-e254-4e5b-a1f2-011cf991c38d} aComponent={VirtualBoxWrap} aText={Could not find a registered machine named 'Manjaro'}, preserve=false aResultDetail=0
+00:00:22.880839 nspr-3   ERROR [COM]: aRC=E_ACCESSDENIED (0x80070005) aIID={85632c68-b5bb-4316-a900-5eb28d3413df} aComponent={MachineWrap} aText={The object functionality is limited}, preserve=false aResultDetail=0
+00:00:22.888814 nspr-3   ERROR [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={85632c68-b5bb-4316-a900-5eb28d3413df} aComponent={MachineWrap} aText={Runtime error opening '/mnt/ntfs_data/Virtual_box/kalilinux/kalilinux.vbox' for reading: -102 (File not found.).
+00:00:22.888820 nspr-3   /build/virtualbox/src/VirtualBox-6.1.32/src/VBox/Main/src-server/MachineImpl.cpp[754] (nsresult Machine::i_registeredInit())}, preserve=false aResultDetail=0
+00:00:22.895141 nspr-3   ERROR [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={85632c68-b5bb-4316-a900-5eb28d3413df} aComponent={MachineWrap} aText={Runtime error opening '/mnt/ntfs_data/Virtual_box/kalilinux/kalilinux.vbox' for reading: -102 (File not found.).
+00:00:22.895150 nspr-3   /build/virtualbox/src/VirtualBox-6.1.32/src/VBox/Main/src-server/MachineImpl.cpp[754] (nsresult Machine::i_registeredInit())}, preserve=false aResultDetail=0
+00:00:23.032169 nspr-3   ERROR [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={85632c68-b5bb-4316-a900-5eb28d3413df} aComponent={MachineWrap} aText={Runtime error opening '/mnt/ntfs_data/Virtual_box/kalilinux/kalilinux.vbox' for reading: -102 (File not found.).
+00:00:23.032180 nspr-3   /build/virtualbox/src/VirtualBox-6.1.32/src/VBox/Main/src-server/MachineImpl.cpp[754] (nsresult Machine::i_registeredInit())}, preserve=false aResultDetail=0
+00:00:23.032533 nspr-3   ERROR [COM]: aRC=E_ACCESSDENIED (0x80070005) aIID={85632c68-b5bb-4316-a900-5eb28d3413df} aComponent={MachineWrap} aText={The object functionality is limited}, preserve=false aResultDetail=0
+00:00:23.033386 nspr-3   ERROR [COM]: aRC=E_ACCESSDENIED (0x80070005) aIID={85632c68-b5bb-4316-a900-5eb28d3413df} aComponent={MachineWrap} aText={The object functionality is limited}, preserve=false aResultDetail=0
+00:00:23.035296 nspr-3   ERROR [COM]: aRC=E_ACCESSDENIED (0x80070005) aIID={85632c68-b5bb-4316-a900-5eb28d3413df} aComponent={MachineWrap} aText={The object functionality is limited}, preserve=false aResultDetail=0
+00:00:23.035985 nspr-3   ERROR [COM]: aRC=E_ACCESSDENIED (0x80070005) aIID={85632c68-b5bb-4316-a900-5eb28d3413df} aComponent={MachineWrap} aText={The object functionality is limited}, preserve=false aResultDetail=0
+00:00:23.039394 nspr-3   ERROR [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={85632c68-b5bb-4316-a900-5eb28d3413df} aComponent={MachineWrap} aText={Runtime error opening '/mnt/ntfs_data/Virtual_box/kalilinux/kalilinux.vbox' for reading: -102 (File not found.).
+00:00:23.039399 nspr-3   /build/virtualbox/src/VirtualBox-6.1.32/src/VBox/Main/src-server/MachineImpl.cpp[754] (nsresult Machine::i_registeredInit())}, preserve=false aResultDetail=0
+00:00:23.041884 nspr-3   ERROR [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={85632c68-b5bb-4316-a900-5eb28d3413df} aComponent={MachineWrap} aText={Runtime error opening '/mnt/ntfs_data/Virtual_box/kalilinux/kalilinux.vbox' for reading: -102 (File not found.).
+00:00:23.041887 nspr-3   /build/virtualbox/src/VirtualBox-6.1.32/src/VBox/Main/src-server/MachineImpl.cpp[754] (nsresult Machine::i_registeredInit())}, preserve=false aResultDetail=0
+00:00:23.043623 nspr-3   ERROR [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={85632c68-b5bb-4316-a900-5eb28d3413df} aComponent={MachineWrap} aText={Runtime error opening '/mnt/ntfs_data/Virtual_box/kalilinux/kalilinux.vbox' for reading: -102 (File not found.).
+00:00:23.043632 nspr-3   /build/virtualbox/src/VirtualBox-6.1.32/src/VBox/Main/src-server/MachineImpl.cpp[754] (nsresult Machine::i_registeredInit())}, preserve=false aResultDetail=0
+00:00:23.045998 nspr-3   ERROR [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={85632c68-b5bb-4316-a900-5eb28d3413df} aComponent={MachineWrap} aText={Runtime error opening '/mnt/ntfs_data/Virtual_box/kalilinux/kalilinux.vbox' for reading: -102 (File not found.).
+00:00:23.046004 nspr-3   /build/virtualbox/src/VirtualBox-6.1.32/src/VBox/Main/src-server/MachineImpl.cpp[754] (nsresult Machine::i_registeredInit())}, preserve=false aResultDetail=0
+00:00:23.049912 nspr-3   ERROR [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={85632c68-b5bb-4316-a900-5eb28d3413df} aComponent={MachineWrap} aText={Runtime error opening '/mnt/ntfs_data/Virtual_box/kalilinux/kalilinux.vbox' for reading: -102 (File not found.).
+00:00:23.049917 nspr-3   /build/virtualbox/src/VirtualBox-6.1.32/src/VBox/Main/src-server/MachineImpl.cpp[754] (nsresult Machine::i_registeredInit())}, preserve=false aResultDetail=0
+00:00:23.053133 nspr-3   ERROR [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={85632c68-b5bb-4316-a900-5eb28d3413df} aComponent={MachineWrap} aText={Runtime error opening '/mnt/ntfs_data/Virtual_box/kalilinux/kalilinux.vbox' for reading: -102 (File not found.).
+00:00:23.053137 nspr-3   /build/virtualbox/src/VirtualBox-6.1.32/src/VBox/Main/src-server/MachineImpl.cpp[754] (nsresult Machine::i_registeredInit())}, preserve=false aResultDetail=0
+00:00:25.102917 nspr-2   ERROR [COM]: aRC=E_ACCESSDENIED (0x80070005) aIID={85632c68-b5bb-4316-a900-5eb28d3413df} aComponent={MachineWrap} aText={The object functionality is limited}, preserve=false aResultDetail=0
+00:00:25.108607 nspr-2   ERROR [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={85632c68-b5bb-4316-a900-5eb28d3413df} aComponent={MachineWrap} aText={Runtime error opening '/mnt/ntfs_data/Virtual_box/kalilinux/kalilinux.vbox' for reading: -102 (File not found.).
+00:00:25.108612 nspr-2   /build/virtualbox/src/VirtualBox-6.1.32/src/VBox/Main/src-server/MachineImpl.cpp[754] (nsresult Machine::i_registeredInit())}, preserve=false aResultDetail=0
+00:00:25.112794 nspr-2   ERROR [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={85632c68-b5bb-4316-a900-5eb28d3413df} aComponent={MachineWrap} aText={Runtime error opening '/mnt/ntfs_data/Virtual_box/kalilinux/kalilinux.vbox' for reading: -102 (File not found.).
+00:00:25.112802 nspr-2   /build/virtualbox/src/VirtualBox-6.1.32/src/VBox/Main/src-server/MachineImpl.cpp[754] (nsresult Machine::i_registeredInit())}, preserve=false aResultDetail=0
+00:00:25.113560 nspr-2   ERROR [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={85632c68-b5bb-4316-a900-5eb28d3413df} aComponent={MachineWrap} aText={Runtime error opening '/mnt/ntfs_data/Virtual_box/kalilinux/kalilinux.vbox' for reading: -102 (File not found.).
+00:00:25.113567 nspr-2   /build/virtualbox/src/VirtualBox-6.1.32/src/VBox/Main/src-server/MachineImpl.cpp[754] (nsresult Machine::i_registeredInit())}, preserve=false aResultDetail=0
+00:00:25.113842 nspr-2   ERROR [COM]: aRC=E_ACCESSDENIED (0x80070005) aIID={85632c68-b5bb-4316-a900-5eb28d3413df} aComponent={MachineWrap} aText={The object functionality is limited}, preserve=false aResultDetail=0
+00:00:25.114780 nspr-2   ERROR [COM]: aRC=E_ACCESSDENIED (0x80070005) aIID={85632c68-b5bb-4316-a900-5eb28d3413df} aComponent={MachineWrap} aText={The object functionality is limited}, preserve=false aResultDetail=0
+00:00:25.115749 nspr-2   ERROR [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={85632c68-b5bb-4316-a900-5eb28d3413df} aComponent={MachineWrap} aText={Runtime error opening '/mnt/ntfs_data/Virtual_box/kalilinux/kalilinux.vbox' for reading: -102 (File not found.).
+00:00:25.115754 nspr-2   /build/virtualbox/src/VirtualBox-6.1.32/src/VBox/Main/src-server/MachineImpl.cpp[754] (nsresult Machine::i_registeredInit())}, preserve=false aResultDetail=0
+00:00:25.116076 nspr-2   ERROR [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={85632c68-b5bb-4316-a900-5eb28d3413df} aComponent={MachineWrap} aText={Runtime error opening '/mnt/ntfs_data/Virtual_box/kalilinux/kalilinux.vbox' for reading: -102 (File not found.).
+00:00:25.116079 nspr-2   /build/virtualbox/src/VirtualBox-6.1.32/src/VBox/Main/src-server/MachineImpl.cpp[754] (nsresult Machine::i_registeredInit())}, preserve=false aResultDetail=0
+00:00:25.116356 nspr-2   ERROR [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={85632c68-b5bb-4316-a900-5eb28d3413df} aComponent={MachineWrap} aText={Runtime error opening '/mnt/ntfs_data/Virtual_box/kalilinux/kalilinux.vbox' for reading: -102 (File not found.).
+00:00:25.116359 nspr-2   /build/virtualbox/src/VirtualBox-6.1.32/src/VBox/Main/src-server/MachineImpl.cpp[754] (nsresult Machine::i_registeredInit())}, preserve=false aResultDetail=0
+00:00:25.116844 nspr-2   ERROR [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={85632c68-b5bb-4316-a900-5eb28d3413df} aComponent={MachineWrap} aText={Runtime error opening '/mnt/ntfs_data/Virtual_box/kalilinux/kalilinux.vbox' for reading: -102 (File not found.).
+00:00:25.116848 nspr-2   /build/virtualbox/src/VirtualBox-6.1.32/src/VBox/Main/src-server/MachineImpl.cpp[754] (nsresult Machine::i_registeredInit())}, preserve=false aResultDetail=0
+00:00:25.117147 nspr-2   ERROR [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={85632c68-b5bb-4316-a900-5eb28d3413df} aComponent={MachineWrap} aText={Runtime error opening '/mnt/ntfs_data/Virtual_box/kalilinux/kalilinux.vbox' for reading: -102 (File not found.).
+00:00:25.117150 nspr-2   /build/virtualbox/src/VirtualBox-6.1.32/src/VBox/Main/src-server/MachineImpl.cpp[754] (nsresult Machine::i_registeredInit())}, preserve=false aResultDetail=0
+00:00:25.117472 nspr-2   ERROR [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={85632c68-b5bb-4316-a900-5eb28d3413df} aComponent={MachineWrap} aText={Runtime error opening '/mnt/ntfs_data/Virtual_box/kalilinux/kalilinux.vbox' for reading: -102 (File not found.).
+00:00:25.117475 nspr-2   /build/virtualbox/src/VirtualBox-6.1.32/src/VBox/Main/src-server/MachineImpl.cpp[754] (nsresult Machine::i_registeredInit())}, preserve=false aResultDetail=0
+00:18:20.253472 nspr-3   Saving settings file "/home/ding/.config/VirtualBox/VirtualBox.xml" with version "1.12-linux"
+00:18:20.264077 nspr-3   Saving settings file "/home/ding/.config/VirtualBox/VirtualBox.xml" with version "1.12-linux"
+00:18:20.274430 nspr-2   Saving settings file "/home/ding/.config/VirtualBox/VirtualBox.xml" with version "1.12-linux"
+00:18:20.278682 nspr-3   Saving settings file "/home/ding/.config/VirtualBox/VirtualBox.xml" with version "1.12-linux"
+00:18:20.282454 nspr-2   Saving settings file "/home/ding/.config/VirtualBox/VirtualBox.xml" with version "1.12-linux"
+00:18:25.804443 main     VirtualBox: object deletion starts
+00:18:25.805085 main     HostDnsMonitor: shutting down ...
+00:18:25.805395 main     HostDnsMonitor: shut down
+00:18:25.870283 Watcher  ERROR [COM]: aRC=E_ACCESSDENIED (0x80070005) aIID={d0a0163f-e254-4e5b-a1f2-011cf991c38d} aComponent={VirtualBoxWrap} aText={The object is not ready}, preserve=false aResultDetail=0
+00:18:30.805530 main     {00007f0704017510} HostPowerServiceLinux::~HostPowerServiceLinux: RTThreadWait() for 5000 ms failed with VERR_TIMEOUT
+00:18:30.805937 main     VirtualBox: object deleted

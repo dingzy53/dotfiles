@@ -1,0 +1,120 @@
+10:41:38.214: CPU Name: Intel(R) Core(TM) i5-4440 CPU @ 3.10GHz
+10:41:38.214: CPU Speed: 3119.585MHz
+10:41:38.215: Physical Cores: 4, Logical Cores: 4
+10:41:38.215: Physical Memory: 5859MB Total, 1403MB Free
+10:41:38.215: Kernel Version: Linux 5.17.5-arch1-1
+10:41:38.215: Distribution: "Arch Linux" Unknown
+10:41:38.215: Session Type: x11
+10:41:38.215: Window System: X11.0, Vendor: The X.Org Foundation, Version: 1.21.1
+10:41:38.216: Qt Version: 5.15.3 (runtime), 5.15.3 (compiled)
+10:41:38.216: Portable mode: false
+10:41:38.298: OBS 27.2.3-1 (linux)
+10:41:38.298: ---------------------------------
+10:41:38.298: ---------------------------------
+10:41:38.298: audio settings reset:
+10:41:38.298: 	samples per sec: 48000
+10:41:38.298: 	speakers:        2
+10:41:38.306: ---------------------------------
+10:41:38.306: Initializing OpenGL...
+10:41:38.372: Loading up OpenGL on adapter Intel Mesa Intel(R) HD Graphics 4600 (HSW GT2)
+10:41:38.372: OpenGL loaded successfully, version 4.6 (Core Profile) Mesa 22.0.2, shading language 4.60
+10:41:38.450: ---------------------------------
+10:41:38.450: video settings reset:
+10:41:38.450: 	base resolution:   1920x1080
+10:41:38.450: 	output resolution: 1920x1080
+10:41:38.450: 	downscale filter:  Bicubic
+10:41:38.450: 	fps:               60/1
+10:41:38.450: 	format:            NV12
+10:41:38.450: 	YUV mode:          709/Partial
+10:41:38.450: NV12 texture support not available
+10:41:38.457: Audio monitoring device:
+10:41:38.457: 	name: 默认
+10:41:38.457: 	id: default
+10:41:38.457: ---------------------------------
+10:41:38.460: Failed to load 'en-US' text for module: 'decklink-captions.so'
+10:41:38.463: Failed to load 'en-US' text for module: 'decklink-ouput-ui.so'
+10:41:38.602: A DeckLink iterator could not be created.  The DeckLink drivers may not be installed
+10:41:38.602: No blackmagic support
+10:41:38.647: os_dlopen(libnvidia-encode.so.1->libnvidia-encode.so.1): libnvidia-encode.so.1: cannot open shared object file: No such file or directory
+10:41:38.647: 
+10:41:38.647: FFMPEG VAAPI supported
+10:41:38.671: os_dlopen(/usr//lib/obs-plugins/sndio.so->/usr//lib/obs-plugins/sndio.so): libsndio.so.7: cannot open shared object file: No such file or directory
+10:41:38.671: 
+10:41:38.671: Module '/usr//lib/obs-plugins/sndio.so' not loaded
+10:41:38.675: Failed to load 'zh-CN' text for module: 'v4l2sink.so'
+10:41:38.675: ---------------------------------
+10:41:38.675:   Loaded Modules:
+10:41:38.676:     v4l2sink.so
+10:41:38.676:     text-freetype2.so
+10:41:38.676:     rtmp-services.so
+10:41:38.676:     obs-x264.so
+10:41:38.676:     obs-transitions.so
+10:41:38.676:     obs-outputs.so
+10:41:38.676:     obs-libfdk.so
+10:41:38.676:     obs-filters.so
+10:41:38.676:     obs-ffmpeg.so
+10:41:38.676:     linux-v4l2.so
+10:41:38.676:     linux-pulseaudio.so
+10:41:38.676:     linux-jack.so
+10:41:38.676:     linux-decklink.so
+10:41:38.676:     linux-capture.so
+10:41:38.676:     linux-alsa.so
+10:41:38.676:     image-source.so
+10:41:38.676:     frontend-tools.so
+10:41:38.676:     decklink-ouput-ui.so
+10:41:38.676:     decklink-captions.so
+10:41:38.676: ---------------------------------
+10:41:38.676: ==== Startup complete ===============================================
+10:41:38.742: All scene data cleared
+10:41:38.742: ------------------------------------------------
+10:41:38.746: pulse-input: Server name: 'pulseaudio 15.0'
+10:41:38.746: pulse-input: Audio format: s16le, 48000 Hz, 2 channels
+10:41:38.746: pulse-input: Started recording from 'alsa_output.pci-0000_00_1b.0.analog-stereo.monitor'
+10:41:38.746: [Loaded global audio device]: 'Desktop Audio'
+10:41:38.952: pulse-input: Server name: 'pulseaudio 15.0'
+10:41:38.952: pulse-input: Audio format: s16le, 16000 Hz, 1 channels
+10:41:38.953: pulse-input: Started recording from 'alsa_input.usb-SN0002_HIK_720P_Camera_SN0002-02.mono-fallback'
+10:41:38.953: [Loaded global audio device]: 'Mic/Aux'
+10:41:38.953: xshm-input: Geometry 1920x1080 @ 0,0
+10:41:38.961: v4l2-input: Start capture from /dev/video0
+10:41:39.017: v4l2-input: Input: 0
+10:41:39.090: v4l2-input: Resolution: 640x480
+10:41:39.090: v4l2-input: Pixelformat: MJPG
+10:41:39.090: v4l2-input: Linesize: 0 Bytes
+10:41:39.090: v4l2-input: Framerate: 30.00 fps
+10:41:39.091: v4l2-input: /dev/video0: select timeout set to 166666 (5x frame periods)
+10:41:39.094: Switched to scene 'Scene'
+10:41:39.094: ------------------------------------------------
+10:41:39.094: Loaded scenes:
+10:41:39.094: - scene 'Scene':
+10:41:39.099:     - source: '视频采集设备 (V4L2)' (v4l2_input)
+10:41:39.099:         - filter: '色值' (color_key_filter_v2)
+10:41:39.099:     - source: '屏幕采集 (XSHM)' (xshm_input)
+10:41:39.099: ------------------------------------------------
+10:41:39.589: adding 42 milliseconds of audio buffering, total audio buffering is now 42 milliseconds (source: Mic/Aux)
+10:41:39.589: 
+10:41:44.971: ---------------------------------
+10:41:44.971: [x264 encoder: 'simple_h264_recording'] preset: veryfast
+10:41:44.971: [x264 encoder: 'simple_h264_recording'] profile: high
+10:41:44.973: [x264 encoder: 'simple_h264_recording'] settings:
+10:41:44.973: 	rate_control: CRF
+10:41:44.973: 	bitrate:      0
+10:41:44.973: 	buffer size:  0
+10:41:44.973: 	crf:          23
+10:41:44.973: 	fps_num:      60
+10:41:44.973: 	fps_den:      1
+10:41:44.973: 	width:        1920
+10:41:44.973: 	height:       1080
+10:41:44.973: 	keyint:       250
+10:41:44.973: 
+10:41:44.989: libfdk_aac encoder created
+10:41:44.989: libfdk_aac bitrate: 192, channels: 2
+10:41:45.006: ==== Recording Start ===============================================
+10:41:45.006: [ffmpeg muxer: 'simple_file_output'] Writing file '/home/ding/video/2022-05-02 10-41-44.mp4'...
+10:42:12.557: [ffmpeg muxer: 'simple_file_output'] Output of file '/home/ding/video/2022-05-02 10-41-44.mp4' stopped
+10:42:12.557: Output 'simple_file_output': stopping
+10:42:12.557: Output 'simple_file_output': Total frames output: 1628
+10:42:12.557: Output 'simple_file_output': Total drawn frames: 1491 (1652 attempted)
+10:42:12.557: Output 'simple_file_output': Number of lagged frames due to rendering lag/stalls: 161 (9.7%)
+10:42:12.558: ==== Recording Stop ================================================
+10:42:12.615: libfdk_aac encoder destroyed

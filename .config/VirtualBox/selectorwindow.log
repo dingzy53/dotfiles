@@ -1,0 +1,21 @@
+00:00:00.423447 VirtualBox GUI VM Selector Window 6.1.34 r150636 linux.amd64 (Apr 21 2022 20:04:42) release log
+00:00:00.423448 Log opened 2022-05-04T09:05:58.582756000Z
+00:00:00.423449 Build Type: release
+00:00:00.423450 OS Product: Linux
+00:00:00.423451 OS Release: 5.17.5-arch1-1
+00:00:00.423452 OS Version: #1 SMP PREEMPT Wed, 27 Apr 2022 20:56:11 +0000
+00:00:00.423469 DMI Product Name: B85
+00:00:00.423475 DMI Product Version: To be filled by O.E.M.
+00:00:00.423479 Firmware type: UEFI
+00:00:00.423677 Secure Boot: Disabled
+00:00:00.423709 Host RAM: 5859MB (5.7GB) total, 5362MB (5.2GB) available
+00:00:00.423711 Executable: /usr/lib/virtualbox/VirtualBox
+00:00:00.423712 Process ID: 760
+00:00:00.423712 Package type: LINUX_64BITS_GENERIC (OSE)
+00:00:00.423730 Qt version: 5.15.3
+00:00:00.457924 GUI: UIMediumEnumerator: Medium-enumeration started...
+00:00:01.102957 GUI: UIMediumEnumerator: Medium-enumeration finished!
+00:00:05.100255 GUI: UIInvisibleWindow::sltFallback: Move event haven't came. Screen: 0, work area: 957x539 x 75x50
+00:00:05.100330 GUI: UIDesktopWidgetWatchdog::sltHandleHostScreenAvailableGeometryCalculated: Screen 0 work area is actually resized to: 957x539 x 75x50
+00:00:48.645208 ERROR [COM]: aRC=NS_ERROR_UNEXPECTED (0x8000ffff) aIID={c0447716-ff5a-4795-b57a-ecd5fffa18a4} aComponent={SessionWrap} aText={The session is not locked (session state: Unlocked)}, preserve=false aResultDetail=0
+00:09:15.671752 ERROR [COM]: aRC=NS_ERROR_UNEXPECTED (0x8000ffff) aIID={c0447716-ff5a-4795-b57a-ecd5fffa18a4} aComponent={SessionWrap} aText={The session is not locked (session state: Unlocked)}, preserve=false aResultDetail=0

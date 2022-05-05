@@ -1,1 +1,50 @@
-/home/ding/.config/dolphinrc
+MenuBar=Disabled
+
+[CompactMode]
+FontWeight=29
+
+[DetailsMode]
+FontWeight=29
+
+[ExtractDialog]
+DirHistory[$e]=$HOME/Downloads/EFI/OC/Kexts/
+HDMI2 Height 1920x1080=710
+HDMI2 Width 1920x1080=1280
+
+[General]
+Version=201
+ViewPropsTimestamp=2022,3,7,12,0,20.667
+
+[IconsMode]
+FontWeight=29
+PreviewSize=112
+
+[KFileDialog Settings]
+Places Icons Auto-resize=false
+Places Icons Static Size=22
+Recent Files[$e]=file:$HOME/Downloads/EFI/OC/Kexts,file:$HOME/Downloads/EFI/OC/Kexts
+Recent URLs[$e]=file:$HOME/Downloads/EFI/OC/Kexts/
+detailViewIconSize=16
+
+[KPropertiesDialog]
+HDMI2 Height 1920x1080=513
+HDMI2 Width 1920x1080=415
+
+[MainWindow]
+HDMI2 Height 1920x1080=1048
+HDMI2 Width 1920x1080=1920
+HDMI2 XPosition 1920x1080=13
+HDMI2 YPosition 1920x1080=13
+MenuBar=Disabled
+ToolBarsMovable=Disabled
+
+[Open-with settings]
+CompletionMode=1
+History=firefox,pro,vim,mpv,zathu,za,fire,oku,firef
+
+[PreviewSettings]
+Plugins=appimagethumbnail,audiothumbnail,comicbookthumbnail,djvuthumbnail,ebookthumbnail,exrthumbnail,directorythumbnail,imagethumbnail,jpegthumbnail,windowsexethumbnail,windowsimagethumbnail,mltpreview,opendocumentthumbnail,gsthumbnail,svgthumbnail,ffmpegthumbs
+
+[ViewPropertiesDialog]
+HDMI2 Height 1920x1080=639
+HDMI2 Width 1920x1080=413

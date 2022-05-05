@@ -1,1 +1,14 @@
-/home/ding/.config/spectaclerc
+[$Version]
+update_info=spectacle_clipboard.upd:clipboard-settings-change,spectacle_rememberregion.upd:spectacle-migrate-rememberregion
+
+[General]
+clipboardGroup=PostScreenshotCopyImage
+
+[GuiConfig]
+captureMode=5
+cropRegion=624,498,373,328
+window-position=629,283
+
+[Save]
+lastSaveAsLocation=file:///home/ding/Screenshot_20220502_090727.png
+lastSaveLocation=file:///home/ding/Screenshot_20220502_090727.png

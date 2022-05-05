@@ -1,0 +1,106 @@
+20:52:38.956: CPU Name: Intel(R) Core(TM) i5-4440 CPU @ 3.10GHz
+20:52:38.956: CPU Speed: 3108.781MHz
+20:52:38.956: Physical Cores: 4, Logical Cores: 4
+20:52:38.956: Physical Memory: 5859MB Total, 2458MB Free
+20:52:38.956: Kernel Version: Linux 5.16.15-arch1-1
+20:52:38.956: Distribution: "Arch Linux" Unknown
+20:52:38.956: Session Type: x11
+20:52:38.956: Window System: X11.0, Vendor: The X.Org Foundation, Version: 1.21.1
+20:52:38.957: Qt Version: 5.15.3 (runtime), 5.15.3 (compiled)
+20:52:38.957: Portable mode: false
+20:52:39.029: OBS 27.2.3-1 (linux)
+20:52:39.029: ---------------------------------
+20:52:39.030: ---------------------------------
+20:52:39.030: audio settings reset:
+20:52:39.030: 	samples per sec: 48000
+20:52:39.030: 	speakers:        2
+20:52:39.031: ---------------------------------
+20:52:39.031: Initializing OpenGL...
+20:52:39.057: Loading up OpenGL on adapter Intel Open Source Technology Center Mesa DRI Intel(R) HD Graphics 4600 (HSW GT2)
+20:52:39.057: OpenGL loaded successfully, version 4.5 (Core Profile) Mesa 21.3.7, shading language 4.50
+20:52:39.072: ---------------------------------
+20:52:39.072: video settings reset:
+20:52:39.072: 	base resolution:   1920x1080
+20:52:39.072: 	output resolution: 260x146
+20:52:39.072: 	downscale filter:  Bicubic
+20:52:39.072: 	fps:               1/1
+20:52:39.072: 	format:            NV12
+20:52:39.072: 	YUV mode:          709/Partial
+20:52:39.072: NV12 texture support not available
+20:52:39.075: Audio monitoring device:
+20:52:39.075: 	name: 默认
+20:52:39.075: 	id: default
+20:52:39.075: ---------------------------------
+20:52:39.076: Failed to load 'en-US' text for module: 'decklink-captions.so'
+20:52:39.077: Failed to load 'en-US' text for module: 'decklink-ouput-ui.so'
+20:52:39.147: A DeckLink iterator could not be created.  The DeckLink drivers may not be installed
+20:52:39.147: No blackmagic support
+20:52:39.154: os_dlopen(libnvidia-encode.so.1->libnvidia-encode.so.1): libnvidia-encode.so.1: cannot open shared object file: No such file or directory
+20:52:39.154: 
+20:52:39.154: FFMPEG VAAPI supported
+20:52:39.160: os_dlopen(/usr//lib/obs-plugins/sndio.so->/usr//lib/obs-plugins/sndio.so): libsndio.so.7: cannot open shared object file: No such file or directory
+20:52:39.160: 
+20:52:39.160: Module '/usr//lib/obs-plugins/sndio.so' not loaded
+20:52:39.162: Failed to load 'zh-CN' text for module: 'v4l2sink.so'
+20:52:39.163: ---------------------------------
+20:52:39.163:   Loaded Modules:
+20:52:39.163:     v4l2sink.so
+20:52:39.163:     text-freetype2.so
+20:52:39.163:     rtmp-services.so
+20:52:39.163:     obs-x264.so
+20:52:39.163:     obs-transitions.so
+20:52:39.163:     obs-outputs.so
+20:52:39.163:     obs-libfdk.so
+20:52:39.163:     obs-filters.so
+20:52:39.163:     obs-ffmpeg.so
+20:52:39.163:     linux-v4l2.so
+20:52:39.163:     linux-pulseaudio.so
+20:52:39.163:     linux-jack.so
+20:52:39.163:     linux-decklink.so
+20:52:39.163:     linux-capture.so
+20:52:39.163:     linux-alsa.so
+20:52:39.163:     image-source.so
+20:52:39.163:     frontend-tools.so
+20:52:39.163:     decklink-ouput-ui.so
+20:52:39.163:     decklink-captions.so
+20:52:39.163: ---------------------------------
+20:52:39.163: ==== Startup complete ===============================================
+20:52:40.088: All scene data cleared
+20:52:40.088: ------------------------------------------------
+20:52:40.091: pulse-input: Server name: 'pulseaudio 15.0'
+20:52:40.091: pulse-input: Audio format: s16le, 44100 Hz, 2 channels
+20:52:40.091: pulse-input: Started recording from 'alsa_output.pci-0000_00_1b.0.analog-stereo.monitor'
+20:52:40.091: [Loaded global audio device]: 'Desktop Audio'
+20:52:40.091: pulse-input: Server name: 'pulseaudio 15.0'
+20:52:40.091: pulse-input: Audio format: s16le, 16000 Hz, 1 channels
+20:52:40.091: pulse-input: Started recording from 'alsa_input.usb-SN0002_HIK_720P_Camera_SN0002-02.mono-fallback'
+20:52:40.091: [Loaded global audio device]: 'Mic/Aux'
+20:52:40.092: v4l2-input: Start capture from /dev/video0
+20:52:40.092: v4l2-input: Input: 0
+20:52:40.164: v4l2-input: Resolution: 640x480
+20:52:40.164: v4l2-input: Pixelformat: MJPG
+20:52:40.164: v4l2-input: Linesize: 0 Bytes
+20:52:40.164: v4l2-input: Framerate: 30.00 fps
+20:52:40.165: v4l2-input: /dev/video0: select timeout set to 166666 (5x frame periods)
+20:52:40.166: Switched to scene 'Scene'
+20:52:40.166: ------------------------------------------------
+20:52:40.166: Loaded scenes:
+20:52:40.166: - scene 'Scene':
+20:52:40.166:     - source: '视频采集设备 (V4L2)' (v4l2_input)
+20:52:40.166:         - filter: '色值' (color_key_filter_v2)
+20:52:40.166: ------------------------------------------------
+20:52:40.637: adding 42 milliseconds of audio buffering, total audio buffering is now 42 milliseconds (source: Mic/Aux)
+20:52:40.637: 
+20:53:13.544: pulse-input: Stopped recording from 'default'
+20:53:13.544: pulse-input: Got 3322 packets with 534896 frames
+20:53:13.544: pulse-input: Server name: 'pulseaudio 15.0'
+20:53:13.545: pulse-input: Audio format: s16le, 16000 Hz, 1 channels
+20:53:13.545: pulse-input: Started recording from 'alsa_input.usb-SN0002_HIK_720P_Camera_SN0002-02.mono-fallback'
+20:53:14.019: pulse-input: Stopped recording from 'default'
+20:53:14.019: pulse-input: Got 48 packets with 7584 frames
+20:53:14.019: pulse-input: Server name: 'pulseaudio 15.0'
+20:53:14.019: pulse-input: Audio format: s16le, 16000 Hz, 1 channels
+20:53:14.019: pulse-input: Started recording from 'alsa_input.usb-SN0002_HIK_720P_Camera_SN0002-02.mono-fallback'
+20:54:19.996: pulse-input: Stopped recording from 'default'
+20:54:19.996: pulse-input: Got 2054 packets with 331264 frames
+20:54:19.996: pulse-input: Unable to get server info !

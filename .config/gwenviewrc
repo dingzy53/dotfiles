@@ -1,1 +1,43 @@
-/home/ding/.config/gwenviewrc
+[$Version]
+update_info=gwenview.upd:SideBar_StatusBar_Rename,gwenview.upd:ImageView_AlphaBackgroundMode_Update,gwenview.upd:DeleteThumbnailSetting_Rename
+
+[General]
+LastUsedVersion=210800
+
+[KFileDialog Settings]
+Places Icons Auto-resize=false
+Places Icons Static Size=32
+
+[MainWindow]
+HDMI2 Height 1920x1080=1048
+HDMI2 Width 1920x1080=1920
+HDMI2 XPosition 1920x1080=0
+HDMI2 YPosition 1920x1080=0
+MenuBar=Disabled
+State=AAAA/wAAAAD9AAAAAAAAB4AAAAP1AAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAWAG0AYQBpAG4AVABvAG8AbABCAGEAcgEAAAAA/////wAAAAAAAAAA
+ToolBarsMovable=Disabled
+
+[Print]
+PrintHeight=21.05
+
+[Recent Files]
+File1[$e]=$HOME/.vim/plugged/EasyMotion/images/example4.png
+File10[$e]=/run/media/ding/Ventoy/ventoy/theme/ventoy/background.png
+File2[$e]=$HOME/.vim/plugged/EasyMotion/images/example3.png
+File3[$e]=/usr/share/info/pkcs11-vision.png
+File4[$e]=$HOME/.steam/steam/graphics/blefirmwareupdate.png
+File5[$e]=$HOME/.face.icon
+File6[$e]=$HOME/godfrey/帅/IMG_6843.jpg
+File7[$e]=$HOME/documents/1.png
+File8[$e]=$HOME/.cache/thumbnails/large/edfc43c88a51851de7323855c842ecb0.png
+File9[$e]=$HOME/.cache/thumbnails/normal/c0e569fd8bf183ba4107227d999653f9.png
+Name1[$e]=example4.png
+Name10[$e]=background.png
+Name2[$e]=example3.png
+Name3[$e]=pkcs11-vision.png
+Name4[$e]=blefirmwareupdate.png
+Name5[$e]=.face.icon
+Name6[$e]=IMG_6843.jpg
+Name7[$e]=1.png
+Name8[$e]=edfc43c88a51851de7323855c842ecb0.png
+Name9[$e]=c0e569fd8bf183ba4107227d999653f9.png
