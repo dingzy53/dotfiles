@@ -1,6 +1,7 @@
 call plug#begin()
 
 Plug 'joshdick/onedark.vim'
+Plug 'sheerun/vim-polyglot'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'jaredpar/EasyMotion'
@@ -36,12 +37,32 @@ let g:mapleader = ','
 
 " base
 syntax on
+" theme
+" set background=dark
+if has('termguicolors')
+    " Turns on true terminal colors
+    let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
+    let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
+    " Turns on 24-bit RGB color support
+    set termguicolors
+    " Defines how many colors should be used. (maximum: 256, minimum: 0)
+    set t_Co=256
+endif
+set background=dark
+let g:onedark_termcolors=256
+let g:airline_theme='onedark'
+colorscheme onedark
+
 filetype on
 filetype plugin on
 filetype indent on
 set history=2000
 set undofile
-set undodir=$HOME/.vim/vim_undo "path
+set undodir=/home/ding/.vim/vim_undo "path
+set backup
+set backupdir=$HOME/.vim/back/
+set writebackup
+set backupcopy=yes
 set nocompatible
 set autoread
 set shortmess=atI
@@ -53,6 +74,8 @@ set visualbell t_vb=
 set t_vb=
 set tm=500
 set t_Co=256
+
+set nofoldenable
 
 "move
 set cursorcolumn
@@ -111,12 +134,6 @@ if has("autocmd")
   au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
 endif
 
-" theme
-set background=dark
-colorscheme delek
-let g:onedark_termcolors=256
-let g:airline_theme='onedark'
-
 " set mark column color
 hi! link SignColumn   LineNr
 hi! link ShowMarksHLl DiffAdd
@@ -162,6 +179,7 @@ endfun
 
 " ============================ key map ============================
 
+nnoremap ; :
 nnoremap k gk
 nnoremap gk k
 nnoremap j gj
@@ -249,3 +267,6 @@ autocmd Filetype python inoremap ,3 ^i#<Space><Esc>
 autocmd Filetype text nnoremap ,d <CR>:g/^\s*$/d<CR>
 autocmd Filetype text nnoremap ,a <CR>:%s/\s+$//g<CR>
 autocmd Filetype text nnoremap ,g <CR>:%s/./&/g<CR>
+
+execute "set t_8f=\e[38;2;%lu;%lu;%lum"
+execute "set t_8b=\e[48;2;%lu;%lu;%lum"
