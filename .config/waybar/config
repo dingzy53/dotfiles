@@ -1,0 +1,115 @@
+{
+    "layer": "top",
+    "position": "top",
+    "margin": 3,
+    "height": 28,
+    "modules-left": ["sway/workspaces"],
+    "modules-center": ["clock"],
+    "modules-right": ["temperature", "cpu", "memory", "battery", "tray","network", "pulseaudio" ],
+    "sway/mode": {
+        "format": " {}"
+    },
+    "sway/workspaces": {
+        "sort-by-number": true,
+        "disable-scroll": false,
+        "disable-markup": false,
+        "persistent_workspaces": {
+        "1": [],
+        "2": [],
+        "3": [],
+        "4": [],
+        "5": [],
+        },
+        "format": "{icon}",
+        "format-icons": {
+        "1": "",
+        "2": "",
+        "3": "",
+        "4": "",
+        "5": "",
+        "urgent": "",
+        }
+    },
+    "tray": {
+        "icon-size": 20,
+        "spacing": 8
+    },
+    "sway/window": {
+        "max-length": 60,
+        "tooltip": false
+        // "format": "( {} )"
+    },
+    "clock": {
+        "format": "{:%H:%M}",
+        "format-alt": "{:%d %b %Y}",
+        "tooltip": false
+    },
+    "cpu": {
+        "interval": 1,
+        "format": "︁ {}%",
+        "max-length": 10
+    },
+    "memory": {
+        "interval": 1,
+        "format": " {used:0.1f}G/{total:0.1f}G",
+        "tooltip": false
+    },
+    "custom/recorder": {
+        "format": "!",
+        "return-type": "json",
+        "interval": 3,
+        "exec": "echo '{\"class\": \"recording\"}'",
+        "exec-if": "pgrep wf-recorder",
+        "tooltip": false,
+        "on-click": "killall -s SIGINT wf-recorder"
+    },
+    "battery": {
+        "format": "{icon} {capacity}%{time}",
+        "format-icons": ["", "", "", "", ""],
+        "format-time": " ({H}h{M}m)",
+        "format-charging": " {icon} {capacity}%",
+        "format-full": " {icon} Charged",
+        "interval": 3,
+        "states": {
+            "warning": 25,
+            "critical": 10
+        },
+        "tooltip": false
+    },
+    "network": {
+        "format": "{icon}",
+        "format-alt": "︁ ︁{ipaddr} {icon}",
+        "format-alt-click": "click-left",
+        "format-wifi": "",
+        "format-ethernet": " {ifname}",
+        "format-disconnected": "⚠ Disconnected",
+        "tooltip": true,
+        "tooltip-format": "{icon}  ⇣{bandwidthDownBytes}  ⇡{bandwidthUpBytes}"
+    },
+    "pulseaudio": {
+        "format": "{icon:2}{volume}%",
+        "format-alt": "{icon:2}{volume}%",
+        "format-alt-click": "click-right",
+        "format-muted": " ",
+        "format-icons": {
+            "phone": [" ", " ", " ", " "],
+            "default": ["", "", "", ""]
+        },
+        "scroll-step": 5,
+        "on-click": "amixer set Master toggle",
+        "tooltip": false
+    },
+    "backlight": {
+        "format": "{icon} {percent}%",
+        "format-alt": "{icon}",
+        "format-alt-click": "click-left",
+        "format-icons": ["", ""],
+        "on-scroll-up": "light -A 1",
+        "on-scroll-down": "light -U 1"
+    },
+    "temperature": {
+        "interval": 1,
+        "format": " {temperatureC}°C ",
+        "tooltip": false
+    }
+}

@@ -1,0 +1,84 @@
+MenuBar=Disabled
+
+[$Version]
+update_info=dolphin_detailsmodesettings.upd:rename-leading-padding
+
+[Baloo KEditCommentDialog]
+HDMI2 Height 1920x1080=263
+HDMI2 Width 1920x1080=276
+
+[ContextMenu]
+ShowAddToPlaces=false
+ShowOpenInNewTab=false
+ShowOpenInNewWindow=false
+ShowViewMode=false
+
+[DetailsMode]
+UseShortRelativeDates=false
+
+[ExtractDialog]
+1920x1080 screen: Height=720
+1920x1080 screen: Width=1280
+DirHistory[$e]=$HOME/,$HOME/.local/share/pandoc/templates/,$HOME/Downloads/EFI/OC/Kexts/
+HDMI2 Height 1920x1080=710
+HDMI2 Width 1920x1080=1280
+
+[General]
+ConfirmClosingMultipleTabs=false
+RememberOpenedTabs=false
+ShowFullPath=true
+ShowZoomSlider=false
+Version=202
+ViewPropsTimestamp=2022,3,7,12,0,20.667
+
+[IconsMode]
+PreviewSize=80
+
+[KFileDialog Settings]
+Places Icons Auto-resize=false
+Places Icons Static Size=22
+Recent Files[$e]=file:$HOME/.local/share/pandoc/templates,file:///run/media/ding/Ventoy
+Recent URLs[$e]=file:$HOME/.local/share/pandoc/templates/,file:$HOME/
+detailViewIconSize=16
+
+[KPropertiesDialog]
+1536x864 screen: Height=778
+1536x864 screen: Width=585
+1920x1080 screen: Height=585
+1920x1080 screen: Width=529
+2 screens: Height=778
+2 screens: Width=585
+HDMI1 Height 1920x1080=585
+HDMI1 Width 1920x1080=553
+HDMI2 Height 1920x1080=778
+HDMI2 Height 1920x1080 HDMI2=778
+HDMI2 Width 1920x1080=585
+HDMI2 Width 1920x1080 HDMI2=585
+eDP1 Height 1920x1080 eDP1=778
+eDP1 Width 1920x1080 eDP1=585
+rdp0 Height 1920x1200 rdp0=585
+rdp0 Width 1920x1200 rdp0=517
+
+[MainWindow]
+HDMI2 Height 1920x1080=1022
+HDMI2 Width 1920x1080=941
+HDMI2 XPosition 1920x1080=12
+HDMI2 YPosition 1920x1080=12
+MenuBar=Disabled
+ToolBarsMovable=Disabled
+eDP-1 XPosition 1920x1080=580
+eDP-1 YPosition 1920x1080=199
+
+[Open-with settings]
+CompletionMode=1
+History=mpv,vim,kden,fire,kate,auda,gimp,mp,AU,k3b,virtual,pro,wri,prope,proper
+
+[PreviewSettings]
+Plugins=appimagethumbnail,audiothumbnail,blenderthumbnail,cursorthumbnail,ebookthumbnail,directorythumbnail,imagethumbnail,jpegthumbnail,opendocumentthumbnail,gsthumbnail,svgthumbnail,ffmpegthumbs
+
+[Search]
+Location=Everywhere
+
+[ViewPropertiesDialog]
+HDMI2 Height 1920x1080=639
+HDMI2 Width 1920x1080=413

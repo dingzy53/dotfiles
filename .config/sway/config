@@ -1,0 +1,224 @@
+# Set mod key (Mod1=<Alt>, Mod4=<Super>)
+set $mod Mod4
+
+# Configure border style <normal|1pixel|pixel xx|none|pixel>
+default_border none
+
+#for_window [class=".*"] border none
+
+# set wallpaper
+output * bg /home/ding/picture/wallhaven-o3z85l.png fill
+output eDP-1 {
+    scale 1.25
+    position 0 0
+}
+output DP-1 {
+    position 0 -1080
+}
+
+# sleep when idel 5min
+#exec swayidle -w \
+#    timeout 300 'swaylock -f -e -i /home/ding/picture/lockscreen.png' \
+#    timeout 305 'swaymsg "output * power off"' \
+#    resume 'swaymsg "output * power on"' \
+
+# lock when lid close
+set $lock 'swaylock -f -e -i /home/ding/picture/lockscreen.png'
+bindswitch --reload --locked lid:on exec $lock
+
+# Hide borders
+hide_edge_borders none
+
+# Font for window titles.
+font xft:Source Han Sans CN Regular 14
+
+# Use Mouse+$mod to drag floating windows
+floating_modifier $mod
+
+# kill focused window
+bindsym $mod+Shift+q kill
+
+## sound-section
+exec_always --no-startup-id /usr/bin/start-pulseaudio-x11
+bindsym $mod+Ctrl+m exec terminal -e 'alsamixer'
+bindsym XF86AudioRaiseVolume exec amixer  set Master 10%+
+bindsym XF86AudioLowerVolume exec amixer  set Master 10%-
+bindsym XF86AudioMute exec amixer  sset Master toggle
+bindsym XF86AudioPlay exec playerctl play-pause
+bindsym XF86AudioNext exec playerctl next
+bindsym XF86AudioPrev exec playerctl previous
+
+
+## for laptop : display brightness
+bindsym XF86MonBrightnessDown exec brightnessctl set 5%-
+bindsym XF86MonBrightnessUp exec brightnessctl set 5%+
+
+# Start Applications
+bindsym $mod+Return exec --no-startup-id alacritty
+bindsym $mod+Shift+f exec MOZ_ENABLE_WAYLAND=1 firefox
+bindsym $mod+Shift+p exec MOZ_ENABLE_WAYLAND=1 firefox -private-window
+bindsym $mod+Shift+d exec dolphin
+bindsym Print exec --no-startup-id spectacle # screenshot fullscreen
+bindsym $mod+Print exec --no-startup-id grim -g "$(slurp)" /home/ding/grim.png
+bindsym $mod+Shift+Print exec --no-startup-id grim -g "$(slurp)" -|wl-copy
+bindsym $mod+space exec --no-startup-id ~/.config/rofi/launchers/type-1/launcher.sh
+# Autostart applications
+exec --no-startup-id fcitx5 -d
+#exec_always --no-startup-id XDG_CURRENT_DESKTOP=gnome telegram-desktop
+exec --no-startup-id /usr/lib/polkit-kde-authentication-agent-1
+
+# change focus
+bindsym $mod+h focus left
+bindsym $mod+j focus down
+bindsym $mod+k focus up
+bindsym $mod+l focus right
+# alternatively, you can use the cursor keys:
+bindsym $mod+Left focus left
+bindsym $mod+Down focus down
+bindsym $mod+Up focus up
+bindsym $mod+Right focus right
+
+# move focused window
+bindsym $mod+Shift+h move left
+bindsym $mod+Shift+j move down
+bindsym $mod+Shift+k move up
+bindsym $mod+Shift+l move right
+# alternatively, you can use the cursor keys:
+bindsym $mod+Shift+Left move left
+bindsym $mod+Shift+Down move down
+bindsym $mod+Shift+Up move up
+bindsym $mod+Shift+Right move right
+
+# workspace back and forth (with/without active container)
+workspace_auto_back_and_forth yes
+bindsym $mod+Tab workspace back_and_forth
+bindsym $mod+Shift+b move container to workspace back_and_forth; workspace back_and_forth
+
+# toggle fullscreen mode for the focused container
+bindsym $mod+f fullscreen toggle
+
+# change container layout (stacked, tabbed, toggle split)
+#bindsym $mod+s layout stacking
+bindsym $mod+t layout tabbed
+bindsym $mod+e layout toggle split
+
+# toggle tiling / floating
+bindsym $mod+Shift+space floating toggle
+
+# toggle sticky
+bindsym $mod+Shift+s sticky toggle
+
+# focus the parent container
+bindsym $mod+a focus parent
+
+# Workspace names
+set $ws1 1
+set $ws2 2
+set $ws3 3
+set $ws4 4
+set $ws5 5
+
+# switch to workspace
+bindsym $mod+1 workspace $ws1
+bindsym $mod+2 workspace $ws2
+bindsym $mod+3 workspace $ws3
+bindsym $mod+4 workspace $ws4
+bindsym $mod+q workspace $ws5
+bindsym $mod+w workspace $ws6
+
+# Move to workspace with focused container
+bindsym $mod+Shift+1 move container to workspace $ws1; workspace $ws1
+bindsym $mod+Shift+2 move container to workspace $ws2; workspace $ws2
+bindsym $mod+Shift+3 move container to workspace $ws3; workspace $ws3
+bindsym $mod+Shift+4 move container to workspace $ws4; workspace $ws4
+bindsym $mod+Shift+5 move container to workspace $ws5; workspace $ws5
+bindsym $mod+Shift+6 move container to workspace $ws6; workspace $ws6
+
+# Open applications on specific workspaces
+assign [app_id="org.telegram.desktop"] workspace number 1
+assign [app_id="firefox"] workspace number 2
+assign [app_id="org.kde.dolphin"] workspace number 3
+assign [app_id="okular"] $ws4
+assign [app_id="Steam"] $ws5
+
+# Open specific applications in floating mode
+for_window [window_type="dialog"] floating enable
+for_window [class="Celeste.bin.x86_64"] floating enable
+for_window [app_id="org.kde.polkit-kde-authentication-agent-1"] floating enable; resize set 1366 768
+for_window [app_id="org.matplotlib.Matplotlib3"] floating enable; layout tabbed
+for_window [class="qalculate"] floating enable border pixel 1
+for_window [app_id="org.kde.partitionmanager"] floating enable border normal; layout tabbed
+for_window [class="steam"] floating enable border normal
+for_window [class="Lxappearance"] floating enable sticky enable border normal
+for_window [class="qt5ct"] floating enable sticky enable border none; layout tabbed
+for_window [class="Simple-scan"] floating enable border normal
+for_window [class="VirtualBox Manager"] floating enable border normal
+for_window [title="Firefox — Sharing Indicator"] floating enable, sticky enable, move position right
+for_window [title="Transmission"] floating enable, move position right
+for_window [class="(?!)steam"] floating enable border normal
+
+# switch to workspace with urgent window automatically
+for_window [urgent="latest"] focus
+
+# reload the configuration file
+bindsym $mod+Shift+c reload
+
+# restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
+bindsym $mod+Shift+r restart
+
+set $bg-color 	         #2f343f
+set $inactive-bg-color   #2f343f
+set $text-color          #f3f4f5
+set $inactive-text-color #676E7D
+set $urgent-bg-color     #E53935
+
+# window colors
+#                       border              background         text                 indicator
+client.focused          $bg-color           $bg-color          $text-color          #00ff00
+client.unfocused        $inactive-bg-color $inactive-bg-color $inactive-text-color #00ff00
+client.focused_inactive $inactive-bg-color $inactive-bg-color $inactive-text-color #00ff00
+client.urgent           $urgent-bg-color    $urgent-bg-color   $text-color          #00ff00
+
+# Theme colors
+# class                   border  backgr. text    indic.   child_border
+  client.focused          #282c34 #282c34 #61afef #FDF6E3
+  client.focused_inactive #282c34 #282c34 #56b6c2 #454948
+  client.unfocused        #282c34 #282c34 #56b6c2 #454948
+  client.urgent           #CB4B16 #FDF6E3 #56b6c2 #268BD2
+  client.placeholder      #000000 #0c0c0c #ffffff #000000 
+  client.background       #2B2C2B
+
+# Set inner/outer gaps
+gaps inner 6
+gaps outer 3
+
+# Smart gaps (gaps used if only more than one container on the workspace)
+smart_gaps on
+
+smart_borders on
+
+input type:touchpad {
+    tap enabled
+    natural_scroll enable
+    scroll_factor 0.3
+}
+
+bar {
+     swaybar_command waybar
+}
+
+set $gnome-schema org.gnome.desktop.interface
+
+exec_always {
+    gsettings set $gnome-schema gtk-theme 'Breeze-Dark'
+    gsettings set $gnome-schema icon-theme 'breeze-dark'
+    gsettings set $gnome-schema cursor-theme 'breeze_cursors'
+    gsettings set $gnome-schema font-name 'Source Han Sans CN Regular'
+}
+
+exec_always --no-startup-id systemctl --user restart xdg-desktop-portal.service
+exec_always --no-startup-id export XDG_CURRENT_DESKTOP=sway
+exec_always --no-startup-id export QT_QPA_PLATFORM=wayland
+exec_always --no-startup-id export GDK_BACKEND=wayland
+exec_always --no-startup-id systemctl --user import-environment WAYLAND_DISPLAY XDG_CURRENT_DESKTOP
+exec_always --no-startup-id dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP=sway
