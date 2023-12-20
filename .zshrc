@@ -20,12 +20,6 @@ plugins=(git zsh-autosuggestions zsh-syntax-highlighting)
 source $ZSH/oh-my-zsh.sh
 bindkey '^[[Z' autosuggest-accept
 
-
-############### linux ###############
-export SSH_AUTH_SOCK="$XDG_RUNTIME_DIR/ssh-agent.socket"
-alias tlmgr='/usr/share/texmf-dist/scripts/texlive/tlmgr.pl --usermode'
-alias manim='/home/ding/.local/bin/manim'
-
 ############### macos ###############
 #export PATH=/opt/homebrew/bin:$PATH
 #alias python3.11=python3
